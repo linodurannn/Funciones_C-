@@ -1,3 +1,18 @@
+/*
+Titulo: Trabajo Practico #2. Ejercicio 1. 
+Autor: Lino Ervin Duran Serrudo 
+Descripcion: Generar un programa con el uso de variables globales para realizar el siguiente menu y
+submenu:
+		MENU PRINCIPAL:
+		1. Operaciones con Números.
+		2. Concatenar 2 cadenas.
+		S/s. Salir
+		SUBMENU OP NUMEROS:
+		1. Suma de 2 números.
+		2. División de 2 números.
+		M/m. Volver al Menu principal.
+Fecha:2024 - 01 - 26
+*/
 #include <iostream>
 using namespace std;
 
