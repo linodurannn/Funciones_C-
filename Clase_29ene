@@ -7,7 +7,7 @@ char c[10];
 //UTILIZAR FUNCIONES 
 char generarCaracter()
 {
-	return caracter[rand()%11]; // COMENTARIO GENERADA UN CARACTER DE FORMA ALEATORIA.
+	return caracter[rand()%26]; // COMENTARIO GENERADA UN CARACTER DE FORMA ALEATORIA.
 }
 int generarNumero()
 {
@@ -19,11 +19,16 @@ void imprimir()
 	for(int i=0;i<10;i++)
 		cout<<c[i]<<"\t"<<numero[i]<<endl;
 }
+void generarDatos()
+{	for(int i=0;i<10;i++)
+	{
+	numero[i]=generarNumero();
+	c[i]=generarCaracter();
+	}
+}
 int main() {
 	// Realizar una funcion para generar los datos. 
-	for(int i=0;i<10;i++)
-	{
-		numero[i]=generarNumero();
-		c[i]=generarCaracter();
-	}
+	generarDatos();
+	imprimir();
+	return 0;
 }
